@@ -1,0 +1,17 @@
+---
+name: Check and Validate Material Profiles
+on: [push, pull_request]
+jobs:
+  build:
+    name: Validate
+    runs-on: ubuntu-latest
+    container: python:3.12-slim
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Install lxml
+      run: python -m pip install lxml
+
+    - name: Run Check Script
+      run: python scripts/check_material_profiles.py

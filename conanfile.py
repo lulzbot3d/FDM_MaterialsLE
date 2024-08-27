@@ -8,13 +8,13 @@ from conan.errors import ConanInvalidConfiguration
 required_conan_version = ">=1.56.0"
 
 
-class FDM_MaterialsConan(ConanFile):
-    name = "fdm_materials"
+class FDM_MaterialsLEConan(ConanFile):
+    name = "fdm_materialsle"
     license = "LGPL-3.0"
-    author = "Ultimaker B.V."
-    url = "https://github.com/Ultimaker/fdm_materials"
+    author = "Ultimaker B.V., FAME3D LLC."
+    url = "https://github.com/lulzbot3d/FDM_MaterialsLE"
     description = "FDM Material database"
-    topics = ("conan", "profiles", "cura", "ultimaker", "filament")
+    topics = ("conan", "profiles", "cura", "ultimaker", "lulzbot", "filament")
     build_policy = "missing"
     exports = "LICENSE*"
     settings = "os", "compiler", "build_type", "arch"
@@ -36,8 +36,8 @@ class FDM_MaterialsConan(ConanFile):
             raise ConanInvalidConfiguration("Only versions 5+ are support")
 
     def package(self):
-        copy(self, "*.fdm_material", self.source_folder, os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
-        copy(self, "*.sig", self.source_folder, os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
+        copy(self, "*.fdm_material", os.path.join(self.source_folder, "materials"), os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
+        copy(self, "*.sig", os.path.join(self.source_folder, "materials"), os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
 
     def package_info(self):
         self.cpp_info.includedirs = []

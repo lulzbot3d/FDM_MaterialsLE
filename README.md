@@ -1,112 +1,85 @@
-# fdm_materials
+# FDM_MaterialsLE
 
-<p align="center">
-    <a href="https://github.com/Ultimaker/fdm_materials/actions/workflows/cicd.yml" alt="Unit Tests">
-        <img src="https://github.com/Ultimaker/fdm_materials/actions/workflows/cicd.yml/badge.svg" /></a>
-    <a href="https://github.com/Ultimaker/fdm_materials/actions/workflows/conan-package.yml" alt="Unit Tests">
-        <img src="https://github.com/Ultimaker/fdm_materials/actions/workflows/conan-package.yml/badge.svg" /></a>
-    <a href="https://github.com/Ultimaker/fdm_materials/issues" alt="Open Issues">
-        <img src="https://img.shields.io/github/issues/ultimaker/fdm_materials" /></a>
-    <a href="https://github.com/Ultimaker/fdm_materials/issues?q=is%3Aissue+is%3Aclosed" alt="Closed Issues">
-        <img src="https://img.shields.io/github/issues-closed/ultimaker/fdm_materials?color=g" /></a>
-    <a href="https://github.com/Ultimaker/fdm_materials/pulls" alt="Pull Requests">
-        <img src="https://img.shields.io/github/issues-pr/ultimaker/fdm_materials" /></a>
-    <a href="https://github.com/Ultimaker/fdm_materials/graphs/contributors" alt="Contributors">
-        <img src="https://img.shields.io/github/contributors/ultimaker/fdm_materials" /></a>
-    <a href="https://github.com/Ultimaker/fdm_materials" alt="Repo Size">
-        <img src="https://img.shields.io/github/repo-size/ultimaker/fdm_materials?style=flat" /></a>
-    <a href="https://github.com/Ultimaker/fdm_materials/blob/master/LICENSE" alt="License">
-        <img src="https://img.shields.io/github/license/ultimaker/fdm_materials?style=flat" /></a>
-</p>
+[![Profile Validation](https://github.com/lulzbot3d/FDM_MaterialsLE/actions/workflows/check-validate-profiles.yml/badge.svg)](https://github.com/lulzbot3d/FDM_MaterialsLE/actions/workflows/check-validate-profiles.yml)
+[![Conan Package](https://github.com/lulzbot3d/FDM_MaterialsLE/actions/workflows/conan-package.yml/badge.svg)](https://github.com/lulzbot3d/FDM_MaterialsLE/actions/workflows/conan-package.yml)
+[![Repo Size](https://img.shields.io/github/repo-size/lulzbot3d/FDM_MaterialsLE?style=flat)](https://github.com/lulzbot3d/FDM_MaterialsLE)
+[![License](https://img.shields.io/github/license/lulzbot3d/FDM_MaterialsLE?style=flat)](https://github.com/lulzbot3d/FDM_MaterialsLE/blob/main/LICENSE)
 
-
-FDM material database, used in Cura.
+FDM Materials LE database, used in Cura LulzBot Edition
 
 ## License
 
-![License](https://img.shields.io/github/license/ultimaker/fdm_materials?style=flat)  
-fdm_materials is released under terms of the CC0-1.0 License. Terms of the license can be found in the LICENSE file. Or at
-https://creativecommons.org/publicdomain/zero/1.0/
+FDM_MaterialsLE is released under terms of the CC0-1.0 License. Terms of the license can be found in the LICENSE file or [on the creative commons website.](https://creativecommons.org/publicdomain/zero/1.0/)
 
-> But in general it boils down to:  
-> **We waive all rights to the extend of the law. You can copy, modify, distribute as you like, even for commercial purposes**
+> In general it boils down to:  
+> **We waive all rights to the extend of the law. You can copy, modify, distribute as you like, even for commercial purposes.**
 
 ## System Requirements
 
-### Windows
-- Python 3.6 or higher
+### All Environments
 
-### MacOs
-- Python 3.6 or higher
-
-### Linux
 - Python 3.6 or higher
 
 ## How To Build
 
 > **Note:**  
-> We are currently in the process of switch our builds and pipelines to an approach which uses [Conan](https://conan.io/)
-> and pip to manage our dependencies, which are stored on our JFrog Artifactory server and in the pypi.org.
-> At the moment not everything is fully ported yet, so bare with us.
+> We are currently in the process of switch our builds and pipelines to an approach which uses [Conan](https://conan.io/) and pip to manage our dependencies, which are stored on our JFrog Artifactory server and in the pypi.org. At the moment not everything is fully ported yet, so bare with us.
 
-If you want to develop Cura with fdm_materials see the Cura Wiki: [Running Cura from source](https://github.com/Ultimaker/Cura/wiki/Running-Cura-from-Source)
-
-If you have never used [Conan](https://conan.io/) read their [documentation](https://docs.conan.io/en/latest/index.html)
-which is quite extensive and well maintained. Conan is a Python program and can be installed using pip
+If you have never used [Conan](https://conan.io/), read their [documentation](https://docs.conan.io/en/latest/index.html) which is quite extensive and well maintained. Conan is a Python program and can be installed using pip
 
 ### 1. Configure Conan
 
 ```bash
 pip install conan --upgrade
-conan config install https://github.com/ultimaker/conan-config.git
+conan config install https://github.com/lulzbot3d/conan-config-le.git
 conan profile new default --detect --force
 ```
 
-Community developers would have to remove the Conan cura repository because it requires credentials. 
+Community developers would have to remove the Conan cura-le repository because it requires credentials.
 
-Ultimaker developers need to request an account for our JFrog Artifactory server at IT
+LulzBot developers need to request an account for our JFrog Artifactory server with IT
+
 ```bash
-conan remote remove cura
+conan remote remove cura-le
 ```
 
-### 2. Clone fdm_materials
+### 2. Clone FDM_MaterialsLE
+
 ```bash
-git clone https://github.com/Ultimaker/fdm_materials.git
-cd fdm_materials
+git clone https://github.com/lulzbot3d/FDM_MaterialsLE.git
+cd FDM_MaterialsLE
 ```
 
-## Creating a new fdm_materials Conan package
+## Creating a new FDM_MaterialsLE Conan package
 
-To create a new fdm_materials Conan package such that it can be used in Cura and Uranium, run the following command:
+To create a new FDM_Materials Conan package such that it can be used in CuraLE and UraniumLE, run the following command:
 
 ```shell
-conan create . fdm_materials/<version>@<username>/<channel> --build=missing --update
+conan create . fdm_materialsle/<version>@<username>/<channel> --build=missing --update
 ```
 
-This package will be stored in the local Conan cache (`~/.conan/data` or `C:\Users\username\.conan\data` ) and can be used in downstream
-projects, such as Cura and Uranium by adding it as a requirement in the `conanfile.py` or in `conandata.yml`.
+This package will be stored in the local Conan cache (`~/.conan/data` or `C:\Users\username\.conan\data` ) and can be used in downstream projects, such as CuraLE and UraniumLE by adding it as a requirement in the `conanfile.py` or in `conandata.yml`.
 
 Note: Make sure that the used `<version>` is present in the conandata.yml in the fdm_materials root
 
 You can also specify the override at the commandline, to use the newly created package, when you execute the `conan install`
 command in the root of the consuming project, with:
 
-
 ```shell
-conan install . -build=missing --update --require-override=fdm_materials/<version>@<username>/<channel>
+conan install . -build=missing --update --require-override=fdm_materialsle/<version>@<username>/<channel>
 ```
 
-## Developing fdm_materials In Editable Mode
+## Developing FDM_MaterialsLE In Editable Mode
 
 You can use your local development repository downsteam by adding it as an editable mode package.
 This means you can test this in a consuming project without creating a new package for this project every time.
 
 ```bash
-    conan editable add . fdm_materials/<version>@<username>/<channel>
+    conan editable add . fdm_materialsle/<version>@<username>/<channel>
 ```
 
-Then in your downsteam projects (Cura) root directory override the package with your editable mode package.  
+Then in your downsteam projects (CuraLE) root directory override the package with your editable mode package.
 
 ```shell
-conan install . -build=missing --update --require-override=fdm_materials/<version>@<username>/<channel>
+conan install . -build=missing --update --require-override=fdm_materialsle/<version>@<username>/<channel>
 ```

@@ -16,8 +16,8 @@ from lxml import etree
 
 
 NAMESPACES = {
-    "um": "http://www.ultimaker.com/material",
-    "cura": "http://www.ultimaker.com/cura",
+    "lulz": "http://www.lulzbot.com/material",
+    "curale": "http://www.lulzbot.com/cura-le",
 }
 
 
@@ -38,12 +38,12 @@ class MaterialProfile:
 
         @returns None if the brand cannot be found, otherwise the brand text.
         """
-        node = self.document.xpath("./um:metadata/um:name/um:brand", namespaces=NAMESPACES)
+        node = self.document.xpath("./lulz:metadata/lulz:name/lulz:brand", namespaces=NAMESPACES)
         return node[0].text if node else None
 
     @property
     def guid(self) -> Optional[str]:
-        node = self.document.xpath("./um:metadata/um:GUID", namespaces=NAMESPACES)
+        node = self.document.xpath("./lulz:metadata/lulz:GUID", namespaces=NAMESPACES)
         return node[0].text if node else None
 
 
