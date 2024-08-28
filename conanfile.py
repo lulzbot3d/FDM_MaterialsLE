@@ -28,8 +28,8 @@ class FDM_MaterialsLEConan(ConanFile):
         update_conandata(self, {"version": self.version})
 
     def export_sources(self):
-        copy(self, "*.fdm_material", self.recipe_folder, self.export_sources_folder)
-        copy(self, "*.sig", self.recipe_folder, self.export_sources_folder)
+        copy(self, "*.fdm_material", os.path.join(self.recipe_folder, "materials"), self.export_sources_folder)
+        copy(self, "*.sig", os.path.join(self.recipe_folder, "materials"), self.export_sources_folder)
 
     def validate(self):
         if Version(self.version) <= Version("4"):

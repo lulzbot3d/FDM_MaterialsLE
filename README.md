@@ -1,9 +1,10 @@
 # FDM_MaterialsLE
 
-[![Profile Validation](https://github.com/lulzbot3d/FDM_MaterialsLE/actions/workflows/check-validate-profiles.yml/badge.svg)](https://github.com/lulzbot3d/FDM_MaterialsLE/actions/workflows/check-validate-profiles.yml)
-[![Conan Package](https://github.com/lulzbot3d/FDM_MaterialsLE/actions/workflows/conan-package.yml/badge.svg)](https://github.com/lulzbot3d/FDM_MaterialsLE/actions/workflows/conan-package.yml)
-[![Repo Size](https://img.shields.io/github/repo-size/lulzbot3d/FDM_MaterialsLE?style=flat)](https://github.com/lulzbot3d/FDM_MaterialsLE)
-[![License](https://img.shields.io/github/license/lulzbot3d/FDM_MaterialsLE?style=flat)](https://github.com/lulzbot3d/FDM_MaterialsLE/blob/main/LICENSE)
+[![Profile Validation](https://img.shields.io/github/actions/workflow/status/lulzbot3d/FDM_MaterialsLE/check-validate-profiles.yml?style=for-the-badge&logo=github&label=Validation)](https://github.com/lulzbot3d/FDM_MaterialsLE/actions/workflows/check-validate-profiles.yml)
+[![Conan Package](https://img.shields.io/github/actions/workflow/status/lulzbot3d/FDM_MaterialsLE/conan-package.yml?style=for-the-badge&logo=conan&label=Conan%20Package)](https://github.com/lulzbot3d/FDM_MaterialsLE/actions/workflows/conan-package.yml)
+
+[![Repo Size](https://img.shields.io/github/repo-size/lulzbot3d/FDM_MaterialsLE?style=for-the-badge)](https://github.com/lulzbot3d/FDM_MaterialsLE)
+[![License](https://img.shields.io/github/license/lulzbot3d/FDM_MaterialsLE?style=for-the-badge&logo=creativecommons)](https://github.com/lulzbot3d/FDM_MaterialsLE/blob/main/LICENSE)
 
 FDM Materials LE database, used in Cura LulzBot Edition
 
