@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+  <metadata>
+    <name>
+      <brand>Generic</brand>
+      <material>PC (Very Strong)</material>
+      <color>Generic</color>
+    </name>
+    <GUID>1f7e3ebf-2688-4ab8-bdc4-5d173005d3e4</GUID>
+    <version>1</version>
+    <color_code>#0047AB</color_code>
+    <adhesion_info>Use glue stick.</adhesion_info>
+    <purge_pattern>7</purge_pattern>
+  </metadata>
+  <properties>
+    <density>1.2</density>
+    <diameter>2.85</diameter>
+  </properties>
+  <settings>
+    <setting key="print temperature">255</setting>
+    <setting key="heated bed temperature">80</setting>
+    <setting key="standby temperature">200</setting>
+    <setting key="soften temperature">220</setting>
+    <setting key="probe temperature">200</setting>
+    <setting key="wipe temperature">220</setting>
+    <setting key="part removal temperature">60</setting>
+  </settings>
+</fdmmaterial>

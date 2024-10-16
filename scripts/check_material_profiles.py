@@ -16,8 +16,8 @@ from lxml import etree
 
 
 NAMESPACES = {
-    "lulz": "http://www.lulzbot.com/material",
-    "curale": "http://www.lulzbot.com/cura-le",
+    "um": "http://www.ultimaker.com/material",
+    "cura": "http://www.ultimaker.com/cura",
 }
 
 
@@ -38,12 +38,12 @@ class MaterialProfile:
 
         @returns None if the brand cannot be found, otherwise the brand text.
         """
-        node = self.document.xpath("./lulz:metadata/lulz:name/lulz:brand", namespaces=NAMESPACES)
+        node = self.document.xpath("./um:metadata/um:name/um:brand", namespaces=NAMESPACES)
         return node[0].text if node else None
 
     @property
     def guid(self) -> Optional[str]:
-        node = self.document.xpath("./lulz:metadata/lulz:GUID", namespaces=NAMESPACES)
+        node = self.document.xpath("./um:metadata/um:GUID", namespaces=NAMESPACES)
         return node[0].text if node else None
 
 
@@ -138,7 +138,7 @@ def main():
     parser.add_argument("-x", "--xsd", default=(SCRIPT_DIR / "fdmmaterial.xsd"),
                         help="XML Schema Definition file to use for validation (default: fdmmaterial.xsd)")
     parser.add_argument("file", metavar="FILE", nargs="*",
-                        help="One or more *.xml.fdm_material files to check. Default: all files in project root.")
+                        help="One or more *.xml.fdm_material files to check. Default: all files in /materials.")
     parser.add_argument("-v", "--verbose", action="store_true",
                         help="Increase output verbosity.")
     args = parser.parse_args()
@@ -150,7 +150,7 @@ def main():
     if args.file:
         files_to_check = [Path(_) for _ in args.file]
     else:
-        files_to_check = sorted(list(PROJECT_DIR.glob("*.fdm_material")))
+        files_to_check = sorted(list(PROJECT_DIR.joinpath('materials').glob("*.fdm_material")))
 
     success = validateFiles(args.xsd, files_to_check)
     sys.exit(0 if success else 1)
