@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+  <metadata>
+    <name>
+      <brand>IC3D</brand>
+      <material>PLA (Easy Printing)</material>
+      <color>Generic</color>
+      <label>PLA</label>
+    </name>
+    <GUID>09bb79b8-e516-44fb-b6e5-be165c89c64e</GUID>
+    <version>1</version>
+    <color_code>#99AB21</color_code>
+    <tension_position>1</tension_position>
+    <purge_pattern>5</purge_pattern>
+  </metadata>
+  <properties>
+    <density>1.25</density>
+    <diameter>2.85</diameter>
+  </properties>
+  <settings>
+    <setting key="print temperature">205</setting>
+    <setting key="heated bed temperature">60</setting>
+    <setting key="part removal temperature">45</setting>
+
+    <machine>
+      <machine_identifier product="taz_7_dual" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="taz_6_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_2_hs" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_2_hsplus" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_2_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="mini_3_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_289_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_747_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_7_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_8_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <setting key="print temperature">210</setting>
+      <hotend id="0.3 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+      <hotend id="0.4 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+      <hotend id="0.5 mm" />
+      <hotend id="0.8 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_2_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_6_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="taz_7_twnb285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_8_twnb285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <hotend id="0.3 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+      <hotend id="0.4 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+      <hotend id="0.5 mm" />
+      <hotend id="0.8 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+    </machine>
+
+  </settings>
+</fdmmaterial>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+  <metadata>
+    <name>
+      <brand>IC3D</brand>
+      <material>PLA (Easy Printing)</material>
+      <color>Generic</color>
+      <label>PLA</label>
+    </name>
+    <GUID>b34a9e71-f3ec-47e4-9d25-911e9a0c48c9</GUID>
+    <version>1</version>
+    <color_code>#99AB21</color_code>
+    <tension_position>1</tension_position>
+    <purge_pattern>5</purge_pattern>
+  </metadata>
+  <properties>
+    <density>1.25</density>
+    <diameter>1.75</diameter>
+  </properties>
+  <settings>
+    <setting key="print temperature">205</setting>
+    <setting key="heated bed temperature">60</setting>
+    <setting key="part removal temperature">45</setting>
+
+    <machine>
+      <machine_identifier product="mini_2_met175" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="mini_3_met175" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_289_met175" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_747_met175" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_7_met175" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_8_met175" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_met175" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <setting key="print temperature">210</setting>
+      <hotend id="0.3 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+      <hotend id="0.4 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+      <hotend id="0.5 mm" />
+      <hotend id="0.8 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+    </machine>
+
+  </settings>
+</fdmmaterial>
