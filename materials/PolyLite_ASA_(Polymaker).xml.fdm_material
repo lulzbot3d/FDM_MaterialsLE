@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+  <metadata>
+    <name>
+      <brand>Polymaker</brand>
+      <material>ASA (Strong)</material>
+      <color>Generic</color>
+      <label>PolyLite ASA</label>
+    </name>
+    <adhesion_info/>
+    <color_code>#FFA500</color_code>
+    <description/>
+    <version>1</version>
+    <GUID>4e3f8e3e-fc5e-464a-87c0-2af6945864fe</GUID>
+    <purge_pattern>8</purge_pattern>
+  </metadata>
+  <properties>
+    <diameter>2.85</diameter>
+    <density>1.13</density>
+  </properties>
+  <settings>
+    <setting key="print temperature">245.0</setting>
+    <setting key="standby temperature">170</setting>
+    <setting key="soften temperature">190</setting>
+    <setting key="probe temperature">170</setting>
+    <setting key="wipe temperature">190</setting>
+    <setting key="print cooling">0.0</setting>
+    <setting key="retraction amount">1.0</setting>
+    <setting key="heated bed temperature">90.0</setting>
+    <setting key="retraction speed">20.0</setting>
+
+    <machine>
+      <machine_identifier product="taz_7_dual" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_2_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_289_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_747_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_6_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_7_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_1_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="mini_2_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_289_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_747_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_5_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_6_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_7_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="sidekick_289_sk285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_747_sk285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+  </settings>
+</fdmmaterial>

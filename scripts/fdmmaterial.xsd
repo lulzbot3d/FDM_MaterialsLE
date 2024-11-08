@@ -61,6 +61,7 @@
                             <xsd:element name="adhesion_info" type="xsd:string" minOccurs="0"/>
                             <xsd:element name="tension_position" type="xsd:integer" minOccurs="0"/>
                             <xsd:element name="purge_pattern" type="xsd:integer" minOccurs="0"/>
+                            <xsd:element name="info_link" type="url" minOccurs="0"/>
                             <xsd:element name="instruction_link" type="url" minOccurs="0"/>
                             <xsd:element name="EAN" type="xsd:string" minOccurs="0"/>
                             <xsd:element name="TDS" type="url" minOccurs="0"/>

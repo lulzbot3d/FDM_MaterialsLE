@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+  <metadata>
+    <name>
+      <brand>Polymaker</brand>
+      <material>Nylon (Very Strong)</material>
+      <color>Generic</color>
+      <label>PolyMide PA6-CF</label>
+    </name>
+    <description/>
+    <version>1</version>
+    <GUID>54660aef-2bda-440d-8e46-cf672e56efbc</GUID>
+    <adhesion_info>Use Glue Stick</adhesion_info>
+    <color_code>#007FFF</color_code>
+    <purge_pattern>1</purge_pattern>
+  </metadata>
+  <properties>
+    <density>1.17</density>
+    <diameter>2.85</diameter>
+  </properties>
+  <settings>
+    <setting key="standby temperature">200</setting>
+    <setting key="soften temperature">220</setting>
+    <setting key="probe temperature">200</setting>
+    <setting key="wipe temperature">220</setting>
+
+    <machine>
+      <machine_identifier product="taz_7_dual" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_2_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_289_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_747_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_6_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_7_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_1_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="mini_2_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_289_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_747_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_6_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_7_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="sidekick_289_sk285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_747_sk285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+  </settings>
+</fdmmaterial>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+  <metadata>
+    <name>
+      <brand>Polymaker</brand>
+      <material>PETg (Strong)</material>
+      <color>Generic</color>
+      <label>PolyLite PETg</label>
+    </name>
+    <GUID>55794ddb-18ba-419e-8792-374599393dec</GUID>
+    <version>1</version>
+    <color_code>#800080</color_code>
+    <adhesion_info>Use glue stick.</adhesion_info>
+    <version>1</version>
+    <tension_position>1</tension_position>
+    <purge_pattern>4</purge_pattern>
+  </metadata>
+  <properties>
+    <density>1.25</density>
+    <diameter>2.85</diameter>
+  </properties>
+  <settings>
+    <setting key="print temperature">240</setting>
+    <setting key="standby temperature">170</setting>
+    <setting key="soften temperature">190</setting>
+    <setting key="probe temperature">170</setting>
+    <setting key="wipe temperature">190</setting>
+    <setting key="heated bed temperature">80</setting>
+    <setting key="part removal temperature">60</setting>
+
+    <machine>
+      <machine_identifier product="mini_1_aerostruder" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_6_aerostruder" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="sidekick_747_ast285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_7_ast285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_ast285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <setting key="print temperature">230</setting>
+      <hotend id="1.2 mm" />
+      <hotend id="2.4 mm">
+        <setting key="print temperature">225</setting>
+      </hotend>
+    </machine>
+
+    <machine>
+      <machine_identifier product="taz_7_dual" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="taz_5_dual_v3" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_6_dual_v3" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="taz_5_flexy_dually_v2" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_6_flexy_dually_v2" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="taz_6_he" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_2_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="mini_3_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_289_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="sidekick_747_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_7_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_8_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_met285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <hotend id="0.3 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+      <hotend id="0.4 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+      <hotend id="0.5 mm" />
+      <hotend id="0.8 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_1_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="mini_2_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_5_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_6_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_7_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="workhorse_se" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="mini_1_single" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_6_single" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+    <machine>
+      <machine_identifier product="taz_7_twnb285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <machine_identifier product="taz_8_twnb285" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+      <hotend id="0.3 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+      <hotend id="0.4 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+      <hotend id="0.5 mm" />
+      <hotend id="0.8 mm">
+        <setting key="hardware compatible">no</setting>
+      </hotend>
+    </machine>
+
+    <machine>
+      <machine_identifier product="taz_5_twoolhead" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+       <machine_identifier product="taz_6_twoolhead" manufacturer="Fargo Additive Manufacturing Equipment 3D, LLC"/>
+    </machine>
+
+  </settings>
+</fdmmaterial>
