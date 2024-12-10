@@ -5,7 +5,7 @@ from conan.tools.files import copy, update_conandata
 from conan.tools.scm import Version
 from conan.errors import ConanInvalidConfiguration
 
-required_conan_version = ">=1.56.0"
+required_conan_version = ">=2.7.0"
 
 
 class FDM_MaterialsLEConan(ConanFile):
@@ -31,10 +31,6 @@ class FDM_MaterialsLEConan(ConanFile):
         copy(self, "*.fdm_material", os.path.join(self.recipe_folder, "materials"), self.export_sources_folder)
         copy(self, "*.sig", os.path.join(self.recipe_folder, "materials"), self.export_sources_folder)
 
-    def validate(self):
-        if Version(self.version) <= Version("4"):
-            raise ConanInvalidConfiguration("Only versions 5+ are support")
-
     def package(self):
         copy(self, "*.fdm_material", os.path.join(self.source_folder, "materials"), os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
         copy(self, "*.sig", os.path.join(self.source_folder, "materials"), os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
@@ -43,7 +39,6 @@ class FDM_MaterialsLEConan(ConanFile):
         self.cpp_info.includedirs = []
         self.cpp_info.resdirs = ["res"]
         self.runenv_info.append_path("CURA_RESOURCES", os.path.join(self.package_folder, "res", "resources"))
-        self.env_info.CURA_RESOURCES.append(os.path.join(self.package_folder, "res", "resources"))
 
     def package_id(self):
         self.info.clear()
