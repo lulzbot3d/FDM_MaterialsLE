@@ -32,8 +32,8 @@ class FDM_MaterialsLEConan(ConanFile):
         copy(self, "*.sig", os.path.join(self.recipe_folder, "materials"), self.export_sources_folder)
 
     def package(self):
-        copy(self, "*.fdm_material", os.path.join(self.source_folder, "materials"), os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
-        copy(self, "*.sig", os.path.join(self.source_folder, "materials"), os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
+        copy(self, "*.fdm_material", self.source_folder, os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
+        copy(self, "*.sig", self.source_folder, os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
 
     def package_info(self):
         self.cpp_info.includedirs = []
